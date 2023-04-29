@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const typeSchema = new Schema({
     car_types:{type: Array , required:true },  
     bike_types:{type: Array , required:true},  
+    model:{type: Map , required:true}
 });
 
 const VehicleTypes = mongoose.model('typeOfVehicle', typeSchema);
